@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 app = Flask(__name__)
 
 # 1. 사전 로딩된 LSTM 모델
-model = load_model('./new_model/19-0.55662.h5')
+model = load_model('./new_model/19-0.5562.h5')
 
 # 2. 유저 입력 → LSTM 입력 (3일치 × 8피처) 변환 함수
 def convert_user_input_to_model_input(orders):
